@@ -1,0 +1,158 @@
+body {
+  background: linear-gradient(to bottom, #dfb783, #2e0a0a);
+  color: white;       /* texto en blanco para contraste */
+  margin: 0;
+  height: 100vh;      /* ocupa toda la pantalla */
+
+  
+}
+
+.menu-horizontal {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* coloca los <li> en horizontal */
+}
+
+.menu-horizontal li {
+  margin-right: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #e4d6b6;
+  padding: 12px 24px;
+  margin: 0 10px;
+  border-radius: 6px;
+  background: linear-gradient(to left, #4b2e2e, #1a001a);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Enlaces dentro del menú */
+.menu-horizontal a {
+  color: inherit;            /* hereda el color del li */
+  text-decoration: none;     /* quita subrayado */
+  display: block;            /* ocupa todo el área del li */
+}
+
+.menu-horizontal a:visited {
+  color: inherit;            /* mantiene el mismo color aunque ya se haya visitado */
+}
+
+.menu-horizontal a:hover {
+  color: rgb(184, 21, 21);   /* mismo efecto hover que tus li */
+}
+
+.menu-horizontal li:hover {
+  transform: scale(1.1);
+}
+
+
+nav {
+    width: 75%;
+    margin: auto;
+    display: flex;               /* coloca ul y aside en fila */
+    justify-content: space-between; /* menú a la izquierda, aside a la derecha */
+    align-items: center;         /* centra verticalmente */
+}
+
+
+.menu-icono {
+  display: flex;          /* asegura que el contenido se alinee */
+  align-items: center;    /* centra verticalmente la foto */
+  justify-content: flex-end; /* empuja el aside a la derecha dentro del nav */
+}
+
+.menu-icono img {
+  width: 40px;            /* tamaño más pequeño */
+  height: 40px;           /* altura fija */
+  border-radius: 50%;     /* redondear la foto */
+  object-fit: cover;      /* recorta si la foto es grande */
+}
+
+#resume-section {
+  width: 75%;
+  margin: 50px auto;   /* centra la sección y da espacio arriba */
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
+  font-size: 32px;                   /* tamaño del título */
+  color: #3f2605ec;                     /* aquí defines el color de la letra */
+  font-weight: bold;                  /* más grueso para destacar */
+  text-transform: uppercase;          /* opcional: todo en mayúsculas */
+}
+
+.resume-header {
+  display: flex;               /* coloca h2 y botón en fila */
+  justify-content: space-between; /* separa título a la izquierda y botón a la derecha */
+  align-items: center;         /* alinea verticalmente */
+}
+
+.btn-resume {
+  display: inline-block;
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+  color: #d0af83ec;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: linear-gradient(to right, #4b2e2e, #1a001a);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-resume:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #6b3e3e, #2a002a);
+}
+#profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.cuadro-izquierdo, .cuadro-derecho {
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4b2e2e, #1a001a);
+  color: #e4d6b6;
+}
+
+.foto-perfil {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.frase-inspiradora {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.cuadro-derecho p a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #e4d6b6, #4b2e2e); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cuadro-derecho p a:hover {
+  background: linear-gradient(to bottom, #ffcc99, #1a001a); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.icono {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+
+
