@@ -1,11 +1,8 @@
 body {
-  background: linear-gradient(to bottom, #dfb783, #2e0a0a);
-  color: white;       /* texto en blanco para contraste */
-  margin: 0;
-  height: 100vh;      /* ocupa toda la pantalla */
-
-  
+  background: linear-gradient(to bottom, #d2b48c, #4b2e2e);
+  background-attachment: fixed;
 }
+
 
 .menu-horizontal {
   list-style-type: none;
@@ -63,8 +60,8 @@ nav {
 }
 
 .menu-icono img {
-  width: 40px;            /* tamaño más pequeño */
-  height: 40px;           /* altura fija */
+  width: 80px;            /* tamaño más pequeño */
+  height: 80px;           /* altura fija */
   border-radius: 50%;     /* redondear la foto */
   object-fit: cover;      /* recorta si la foto es grande */
 }
@@ -75,16 +72,18 @@ nav {
 }
 h1 {
   font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
-  font-size: 32px;                   /* tamaño del título */
-  color: #3f2605ec;                     /* aquí defines el color de la letra */
+  font-size: 45px;                   /* tamaño del título */
+  color: #2e1e0a;                     /* aquí defines el color de la letra */
   font-weight: bold;                  /* más grueso para destacar */
   text-transform: uppercase;          /* opcional: todo en mayúsculas */
 }
 
 .resume-header {
   display: flex;               /* coloca h2 y botón en fila */
-  justify-content: space-between; /* separa título a la izquierda y botón a la derecha */
+  /*justify-content: space-between; */
+  justify-content:left; /* separa título a la izquierda y botón a la derecha */
   align-items: center;         /* alinea verticalmente */
+  
 }
 
 .btn-resume {
@@ -119,11 +118,16 @@ h1 {
   color: #e4d6b6;
 }
 
+.cuadro-izquierdo {
+  text-align: center;      /* centra todo lo que esté dentro */
+}
 .foto-perfil {
-  width: 100%;
+  width: 55%;
   border-radius: 8px;
   margin-bottom: 15px;
+  display: inline-block;   /* necesario para que text-align funcione */
 }
+
 
 .frase-inspiradora {
   font-family: 'Montserrat', sans-serif;
@@ -153,6 +157,263 @@ h1 {
   margin-right: 8px;
   font-size: 20px;
 }
+#Aboutme
+h1{
+   width: 75%;
+  margin: 50px auto;   /* centra la sección y da espacio arriba */
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
+  font-size: 45px;                   /* tamaño del título */
+  color: #452b0b;                     /* aquí defines el color de la letra */
+  font-weight: bold;                  /* más grueso para destacar */
+  text-transform: uppercase;  
+}
+.aboutme1{
+  color: #241c0c;
+}
+.aboutme2{
+  color: #271d0e;
+}
+.aboutme3{
+  color: #32260e;
+}
+.aboutme4{
+  color: #4c431e;
+}
+.aboutme5{
+  color: #604924;
+}
+#skills
+
+  h1{
+   width: 75%;
+  margin: 50px auto;   /* centra la sección y da espacio arriba */
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
+  font-size: 45px;                   /* tamaño del título */
+  color: #251909;                     /* aquí defines el color de la letra */
+  font-weight: bold;                  /* más grueso para destacar */
+  text-transform: uppercase;  
+}
+h2{
+     width: 85%;
+  margin: 25px auto;   /* centra la sección y da espacio arriba */
+}
+h2 {
+  font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
+  font-size: 25px;                   /* tamaño del título */
+  color: #7d4e15;                     /* aquí defines el color de la letra */
+  font-weight: bold;                  /* más grueso para destacar */
+  text-transform: uppercase;  
+
+}
+ul{
+  width: 85%
+}
+#FAQs
+h1{
+   width: 75%;
+  margin: 50px auto;   /* centra la sección y da espacio arriba */
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* o la fuente que prefieras */
+  font-size: 45px;                   /* tamaño del título */
+  color: #352612;                     /* aquí defines el color de la letra */
+  font-weight: bold;                  /* más grueso para destacar */
+  text-transform: uppercase;  
+}
 
 
+section#FAQs p.p1 {
+  color: rgb(253, 143, 10);
+  font-weight: 900
+}
+
+#FAQs .p2 {
+  color: #cdb56d; /* azul claro */
+  font-weight: 900
+}
+
+#FAQs .p3 {
+    color: rgb(253, 143, 10);
+  font-weight: 900
+}
+
+#FAQs .p4 {
+  color: #cdb56d; /* azul claro */
+  font-weight: 900
+}
+/* Estilo general para audios */
+#FAQs 
+audio {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 6px;
+
+  /* Fondo con gradiente lineal oscuro → claro */
+  background: linear-gradient(to right,
+    #2a1a1a 0%,   /* café muy oscuro en el lado izquierdo */
+    #d2b48c 100%  /* café claro en el lado derecho */
+  );
+
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+.audio-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+
+  /* Fondo con gradiente lineal oscuro → claro */
+  background: linear-gradient(to right,
+    #2a1a1a 0%,   /* café oscuro izquierda */
+    #d2b48c 100%  /* café claro derecha */
+  );
+
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player .play {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.player .progress {
+  flex: 1;
+  cursor: pointer;
+}
+
+.player .time {
+  color: #fff;
+  font-size: 14px;
+}
+/* Estilo general de la barra */
+.player .progress {
+  flex: 1;
+  cursor: pointer;
+  appearance: none; /* quita el estilo nativo */
+  height: 6px;
+  border-radius: 4px;
+  background: #d2b48c; /* café claro para la barra */
+}
+
+/* El circulito (thumb) en navegadores WebKit (Chrome, Edge, Safari) */
+.player .progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4b2e2e; /* café oscuro */
+  border: 2px solid #d2b48c; /* borde café claro */
+  cursor: pointer;
+}
+
+/* El circulito en Firefox */
+.player .progress::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4b2e2e; /* café oscuro */
+  border: 2px solid #d2b48c;
+  cursor: pointer;
+}
+
+/* Fondo general del body */
+body {
+  background: linear-gradient(to bottom,
+    #d2b48c 0%,   /* café claro arriba */
+    #2a1a1a 100%  /* café oscuro abajo */
+  );
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#hobbies h1 {
+  width: 75%;
+  margin: 50px auto;   /* centra la sección y da espacio arriba */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 45px;                   
+  color: #a29a90;                    
+  font-weight: bold;                 
+  text-transform: uppercase;  
+}
+
+.hobby {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(42, 42, 42, 0.6); 
+  border-radius: 8px;
+}
+
+.hobby h2 {
+  color: #d2b48c; 
+  margin-bottom: 18px;
+}
+
+#hobbies p {
+  color: #95826a; 
+  margin-bottom: 10px;
+}
+
+.spotify-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #2b8e4e; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.spotify-link:hover {
+  background: #14833b; 
+}
+
+
+#Footer {
+  background: rgba(42, 42, 42, 0.8); /* semi-transparente para que se vea el degradado del body */
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #d2b48c; /* línea café claro */
+}
+
+#Footer a {
+  color: #00bfff; /* azul llamativo */
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+#Footer a:hover {
+  text-decoration: underline;
+}
+
+#Footer .quote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #d2b48c; /* café claro para resaltar */
+}
 
