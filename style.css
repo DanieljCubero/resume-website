@@ -561,5 +561,31 @@ body {
     text-align: center;       /* centra los textos de contacto */
   }
 }
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu-horizontal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu-icono {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  #profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cuadro-izquierdo, .cuadro-derecho {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 
