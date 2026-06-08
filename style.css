@@ -427,4 +427,87 @@ body {
   font-style: italic;
   color: #d2b48c; /* café claro para resaltar */
 }
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px; /* texto más legible en móvil */
+  }
+
+  nav {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .menu-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-horizontal li {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #resume-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .btn-resume {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%; /* botón ocupa todo el ancho */
+    text-align: center;
+  }
+
+  #profile-section {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .cuadro-izquierdo, .cuadro-derecho {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .foto-perfil {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 28px; /* títulos más pequeños en móvil */
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  ul {
+    width: 95%;
+  }
+
+  #FAQs audio, .audio-box {
+    max-width: 95%;
+  }
+
+  #hobbies h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hobby {
+    padding: 15px;
+  }
+
+  #Footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
 
