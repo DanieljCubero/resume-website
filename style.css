@@ -509,5 +509,57 @@ body {
     padding: 15px;
   }
 }
+@media (max-width: 768px) {
+
+  /* NAV: menú y foto */
+  nav {
+    flex-direction: column;   /* menú arriba, foto abajo */
+    width: 95%;
+    align-items: center;
+  }
+
+  .menu-horizontal {
+    flex-direction: column;   /* menú en columna */
+    align-items: center;
+  }
+
+  .menu-horizontal li {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icono {
+    margin-top: 15px;
+    justify-content: center;  /* centra la foto */
+  }
+
+  .menu-icono img {
+    width: 100px;   /* tamaño más grande en móvil */
+    height: 100px;
+  }
+
+  /* PROFILE SECTION: foto + contacto */
+  #profile-section {
+    flex-direction: column;   /* se apilan en vertical */
+    width: 95%;
+    margin: 20px auto;
+    align-items: center;
+  }
+
+  .cuadro-izquierdo, .cuadro-derecho {
+    width: 100%;              /* ocupan todo el ancho */
+    margin-bottom: 20px;
+  }
+
+  .foto-perfil {
+    width: 80%;               /* foto más grande en móvil */
+    max-width: 250px;
+  }
+
+  .cuadro-derecho p {
+    text-align: center;       /* centra los textos de contacto */
+  }
+}
 
 
